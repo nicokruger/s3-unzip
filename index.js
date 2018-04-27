@@ -40,6 +40,7 @@ function s3Unzip(command, cb){
     bucket: vBucket,
     file: vFile,
     deleteOnSuccess: command.deleteOnSuccess,
+    prefix: command.prefix,
     verbose: command.verbose
   }, cb);
 }
